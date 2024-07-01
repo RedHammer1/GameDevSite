@@ -80,7 +80,7 @@ header>div>ul {
     }
 
     header>div>ul {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .PCList {
@@ -106,6 +106,25 @@ header>div>ul {
     line-height: 30px;
 }
 
+.search_list>ul {
+    margin: 15px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.search_list>ul>li>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    gap: 80px;
+
+}
+
 
 main {
     padding: 15px 30px;
@@ -114,8 +133,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
 }
 
 .bc-margin {
@@ -126,6 +143,33 @@ main {
     /* max-width: 300px; */
     padding: 10px;
     background-color: aquamarine;
+}
+
+.games {
+    display: grid;
+    --auto-grid-min-size: 16rem;
+    width: 100%;
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Adjust the minmax value for the desired column width */
+    grid-template-rows: repeat(3, 1fr);
+    /* Adjust the number of rows as needed */
+
+
+    grid-gap: 1rem;
+
+
+
+}
+
+.game {
+    grid-column: span 1;
+    /* Adjust the number of columns the item spans */
+    grid-row: span 1;
+    /* Adjust the number of rows the item spans */
+    height: 200px;
+    padding: 20px;
+    background-color: red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -160,7 +204,7 @@ p {
 
 footer {
     max-width: 100%;
-    background-color: rgba(122, 122, 122, 0.8);
+    background-color: rgba(122, 122, 122, 18);
     z-index: 2;
     display: flex;
     flex-flow: row wrap;
