@@ -1,9 +1,10 @@
 
 
-function showPopup(str) {
+
+function ShowElem(str) {
     var popup = document.getElementById(str);
 
-        popup.style.display = "block";
+    popup.style.display = "block";
 }
 function showFlexPopup(str) {
     var popup = document.getElementById(str);
@@ -33,6 +34,9 @@ function SearchBox() {
         }
     }
 }
+
+
+
 
 
 

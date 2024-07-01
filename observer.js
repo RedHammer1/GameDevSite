@@ -52,24 +52,9 @@ showBtn.addEventListener('click', () => {
 
 });
 
-var info = document.getElementById("info");
-var textBlock = document.getElementById("text-block");
-// При наведении курсора на текст 
-info.addEventListener("mouseover", function (event) {
-    textBlock.style.display = "block";
-});
-// При уходе курсора с текст 
-info.addEventListener("mouseout", function (event) {
-    textBlock.style.display = "none";
-});
-// При перемещении курсора над текст 
-info.addEventListener("mousemove", function (event) {
-    var offsetX = 10;
-    var offsetY = -5;
-    // Вычисляем позицию блока с текстом относительно курсора 
-    var left = event.pageX + offsetX;
-    var top = event.pageY - textBlock.offsetHeight + offsetY;
-    // Устанавливаем позицию блока с текстом 
-    textBlock.style.left = left + "px";
-    textBlock.style.top = top + "px";
-}); 
+
+
+
+
+
+
