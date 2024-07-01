@@ -1,3 +1,7 @@
+
+const isMobile = /iPhone|iPad|iPod|Android|Windows Phone|BlackBerry|Mobile/i.test(navigator.userAgent);
+
+
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
@@ -21,7 +25,7 @@ const tags = document.querySelectorAll('.view')
 tags.forEach((tag) => {
     observer.observe(tag)
 })
-const showBtn = document.getElementById('showBtn');
+
 const resizableDiv = document.getElementById('menu');
 
 const minWindowSize = 768;
@@ -36,6 +40,7 @@ function checkWindowSize() {
 
 window.onload = checkWindowSize;
 
+const showBtn = document.getElementById('showBtn');
 window.addEventListener('resize', () => {
     checkWindowSize();
 });
@@ -47,10 +52,24 @@ showBtn.addEventListener('click', () => {
 
 });
 
-document.getElementById('game').addEventListener('mousemove', function(e) {
-    var w = window.innerWidth / 2;
-    var h = window.innerHeight / 2;
-    var x = (e.pageX - w) / 10;
-    var y = (e.pageY - h) / 10;
-    document.getElementById('object').style.transform = 'rotateX(' + y + 'deg) rotateY(' + x + 'deg)';
-  });
+var info = document.getElementById("info");
+var textBlock = document.getElementById("text-block");
+// При наведении курсора на текст 
+info.addEventListener("mouseover", function (event) {
+    textBlock.style.display = "block";
+});
+// При уходе курсора с текст 
+info.addEventListener("mouseout", function (event) {
+    textBlock.style.display = "none";
+});
+// При перемещении курсора над текст 
+info.addEventListener("mousemove", function (event) {
+    var offsetX = 10;
+    var offsetY = -5;
+    // Вычисляем позицию блока с текстом относительно курсора 
+    var left = event.pageX + offsetX;
+    var top = event.pageY - textBlock.offsetHeight + offsetY;
+    // Устанавливаем позицию блока с текстом 
+    textBlock.style.left = left + "px";
+    textBlock.style.top = top + "px";
+}); 
