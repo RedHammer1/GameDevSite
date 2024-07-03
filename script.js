@@ -2,12 +2,34 @@
 
 
 //Для списка сайт для мобильных устройств - нужно добавить ресайзинг
-function ShowElem(str) {
+function ShowElem(str, element) {
     const div = document.getElementById(str);
 
-    if (div.value == 1) { div.style.display = 'none'; div.value = 0; }
-    else { div.style.display = 'block'; div.value = 1; }
+    if (div.value == 1) { 
+        div.style.display = 'none'; 
+        element.style.transform = 'rotate(180deg)';
+        div.value = 0; 
+    }
+    else {
+        
+        div.style.display = 'block'; 
+        element.style.transform = 'rotate(-90deg)';
+        div.value = 1;
+     }
 }
+
+function Rotate(str, element) {
+    const div = document.getElementById(str);
+
+    if (div.value == 1) { 
+        element.style.transform = 'rotate(180deg)';
+    }
+    else {
+        element.style.transform = 'rotate(-90deg)';
+     }
+}
+
+
 function showFlexPopup(str) {
     var popup = document.getElementById(str);
     popup.style.display = "flex";

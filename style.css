@@ -14,10 +14,10 @@ body {
     overflow-x: hidden;
 }
 
-p,
-li {
+p {
     text-align: justify;
     text-indent: 30px;
+    font-size: 20px;
 }
 
 h1
@@ -180,7 +180,7 @@ main {
     padding: 10px;
     margin: 5px 0px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(166, 195, 209);
 }
 
 ._img {
@@ -204,7 +204,7 @@ li {
 
 .noSelect
 {
-    cursor: pointer;
+    cursor:default;
     border: none;
 }
 
@@ -213,6 +213,18 @@ li {
     position: relative;
     top:-20px
 }
+
+
+#checkBox
+{
+    transform: rotate(180deg);
+}
+#checkBox
+{
+    width: 25px;
+    height: 25px;
+}
+
 
 
 
@@ -277,12 +289,15 @@ footer {
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     padding: 30px auto;
 }
 
 footer h1 {
     padding: 20px 0px;
+    position: relative;
+    left: 25px;
 }
 
 footer img {
