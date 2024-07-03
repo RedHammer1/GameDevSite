@@ -1,0 +1,23 @@
+@media (prefers-reduced-motion: no-preference) {
+    .in-view {
+        animation: fade 0.3s 0.3s both;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .not-in-view {
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: translate(0, 3rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}

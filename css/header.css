@@ -1,0 +1,103 @@
+header {
+    width: 100%;
+    height: 75px;
+
+    font-weight: bolder;
+    background-color: rgb(83, 83, 83);
+}
+
+header>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header>div>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    list-style: none;
+}
+
+.PCList {
+    width: 100%;
+}
+
+.PhoneList {
+    width: 0%;
+
+}
+
+.elem,
+.logo {
+    display: block;
+}
+
+.elemIcon,
+.elem {
+    border: none;
+    background: none;
+}
+
+.elemIcon {
+    visibility: collapse;
+
+}
+
+@media screen and (max-width:756px) {
+    .elem {
+        display: none;
+        flex-basis: auto;
+    }
+
+    .elemIcon {
+        visibility: visible;
+        position: static;
+    }
+
+    header>div>ul {
+        justify-content: space-between;
+    }
+
+    .PCList {
+        width: 75%;
+    }
+
+    .PhoneList {
+        width: 25%;
+    }
+}
+
+.search_list {
+    display: none;
+    border-radius: 0px 0px 15px 15px;
+    flex-direction: column;
+
+    line-height: 30px;
+}
+
+.search_list>ul {
+    margin: 15px 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.search_list>ul>li>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    gap: 80px;
+
+}

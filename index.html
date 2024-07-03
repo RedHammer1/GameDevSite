@@ -21,10 +21,7 @@
                     </a>
                 </li>
                 <li class="elem">
-                    Статьи
-                </li>
-                <li class="elem">
-                    <a href="games.html">Игры</a>
+                    <a href="html/article.html">Статьи</a>
                 </li>
                 <li class="elem">
                     <picture>
@@ -53,10 +50,7 @@
     <div id="menu" class="search_list">
         <ul>
             <li>
-                Статьи
-            </li>
-            <li>
-                <a href="games.html">Игры</a>
+                <a href="html/article.html">Статьи</a>
             </li>
             <li>
                 <ul>
@@ -82,8 +76,8 @@
 
     <main>
         <div>
-            <h1 class="text">Технологии разработки компьютерных игр</h1>
-            <p class="text"><i>Разработка игр</i> - это процесс, который требует не только творческого подхода, но и глубоких
+            <h1>Технологии разработки компьютерных игр</h1>
+            <p ><i>Разработка игр</i> - это процесс, который требует не только творческого подхода, но и глубоких
                 знаний в
                 области программирования, дизайна и анимации. Современные технологии позволяют создавать игры любого
                 уровня сложности и визуального оформления. В этой статье мы рассмотрим основные технологии, которые
@@ -97,7 +91,7 @@
                 <h2>
                     Игровой движок
                 </h2>
-                <div class="text textWithImage">
+                <div class="textWithImage">
                     <p>
                         <i>Игровой движок</i> – это программное обеспечение, которое используется для создания и разработки
                         компьютерных игр. Он представляет собой набор инструментов, библиотек и функций, которые
@@ -120,51 +114,51 @@
 
         </div>
 
-        <div class="view bc">
+        <div class="view popup">
             <div id="r">
                 <p class="noSelect">Рендеринг (отрисовка)</p>
-                <img class="checkBox" onmousedown="ShowElem('render', this)" value="1" id="checkBox"
-                    src="assets/icon/arrow.png" id="checkBox">
+                <img class="arrow" onmousedown="ShowElem('render', this)" value="1" id="arrow"
+                    src="assets/icon/arrow.png" id="arrow">
             </div>
-            <div class="text" id="render">
+            <div id="render">
                 <p>
                     <i>Рендиринг (от англ. Rendering)</i> – процесс преобразования трехмерной модели или сцены из компьютерной
                     модели или сцены из компьютерной программы в изображение, которое увидит пользователь. Для
                     выполнения рендеринга используются различные программные обеспечения и инструменты, включая
                     специальные API (Application Programming Interface).
                 </p>
-                <p>Подробнее можно прочесть в статье о <a href="render.html">рендеринге</a></p>
+                <p>Подробнее можно прочесть в статье о <a href="html/render.html">рендеринге</a></p>
             </div>
         </div>
 
-        <div class="view bc">
+        <div class="view popup">
             <div id="p">
                 <p class="noSelect">Физический движок</p>
-                <img class="checkBox" onmousedown="ShowElem('physical', this)" value="1" id="checkBox"
-                    src="assets/icon/arrow.png" id="checkBox">
+                <img class="arrow" onmousedown="ShowElem('physical', this)" value="1" id="arrow"
+                    src="assets/icon/arrow.png" id="arrow">
             </div>
 
 
 
-            <div class="text" id="physical">
+            <div id="physical">
                 <p >
                     <i>Физический движок</i> – это программа, которая имитирует физические законы и взаимодействия между
                     объектами в компьютерной графике. Он отвечает за расчет и управления движением, коллизиями,
                     гравитацией, инерцией и другими физическими эффектами.
                 </p>
-                <p>Подробнее можно прочесть в статье о <a href="render.html">физическом движке</a></p>
+                <p>Подробнее можно прочесть в статье о <a href="html/physics.html">физическом движке</a></p>
             </div>
         </div>
 
-        <div class="view bc">
+        <div class="view popup">
             <div id="a">
                 <p class="noSelect">Аудио движок</p>
 
-                <img class="checkBox" onmousedown="ShowElem('audio', this)" value="1" id="checkBox"
+                <img class="arrow" onmousedown="ShowElem('audio', this)" value="1" id="arrow"
                     src="assets/icon/arrow.png">
 
             </div>
-            <div class="text" id="audio">
+            <div  id="audio">
                 <p>
                    <i>Звуковой движок (audio engine)</i> является программным компонентом, который отвечает за проигрывание и
                     обработку звуковых данных в компьютерных программах, играх, медиа-плеерах и других устройствах. Он
@@ -173,24 +167,22 @@
                     включать в себя такие функции, как синтез звука, микширование аудио потоков, пространственная
                     обработка звука, обработка эффектов и другие возможности для работы с звуком.
                 </p>
-                <p>Подробнее можно прочесть в статье о <a href="render.html">аудио движке</a></p>
             </div>
         </div>
 
-        <div class="view bc">
+        <div class="view popup">
             <div id="n">
                 <p class="noSelect">Сетевых технологиях</p>
 
-                <img class="checkBox" onmousedown="ShowElem('network', this)" value="1" id="checkBox"
+                <img class="arrow" onmousedown="ShowElem('network', this)" value="1" id="arrow"
                     src="assets/icon/arrow.png">
             </div>
 
-            <div class="text" id="network">
+            <div id="network">
                 <p>
                     В компьютерных играх  <i>сетевые технологии</i> используются для создания мультиплеерного режима игры,
                     который позволяет игрокам играть вместе через интернет.
                 </p>
-                <p>Подробнее можно прочесть в статье о <a href="render.html">сетевых технологиях</a></p>
             </div>
         </div>
 

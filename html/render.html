@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Технологии разработки видеоигр</title>
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <ul class="PCList">
+                <li>
+                    <a title="Главная страница" href="../index.html" class="logo">
+                        <picture>
+                            <img src="../assets/icon/logo.png" alt="Gamed vetech" width="140px" height="20px">
+                        </picture>
+                    </a>
+                </li>
+                <li class="elem">
+                    <a href="article.html">Статьи</a>
+                </li>
+                <li class="elem">
+                    <picture>
+                        <img src="../assets/icon/search.png" alt="ПОИСК" width="40px" height="40px">
+                    </picture>
+                </li>
+            </ul>
+            <ul class="PhoneList">
+                <li class="elemIcon">
+                    <picture>
+                        <img src="../assets/icon/search.png" alt="ПОИСК" width="40px" height="40px">
+                    </picture>
+                </li>
+
+                <li>
+                    <button class="elemIcon" id="showBtn" type="button">
+                        <picture>
+                            <img src="../assets/icon/list.png" alt="ЛИСТ" width="40px" height="40px">
+                        </picture>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="menu" class="search_list">
+        <ul>
+            <li>
+                <a href="article.html">Статьи</a>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <a href="https://vk.com/">
+                            <img src="../assets/Соцсети/vk.png" alt="vk" width="30px" height="30px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://rutube.ru/">
+                            <img src="../assets/Соцсети/rt.png" alt="rt" width="30px" height="30px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.telegram.org/">
+                            <img src="../assets/Соцсети/telegram.png" alt="telegram" width="30px" height="30px">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <div>
+            <h1>Рендеринг (отрисовка)</h1>
+            <p><i>Рендиринг (от англ. Rendering)</i> – процесс преобразования трехмерной модели или сцены из
+                компьютерной
+                модели или сцены из компьютерной программы в изображение, которое увидит пользователь. Для выполнения
+                рендеринга используются различные программные обеспечения и инструменты, включая специальные <i>API
+                    (Application Programming Interface)</i>.
+            </p>
+        </div>
+
+
+        <div>
+            <h2>
+                Что такое API и его виды
+            </h2>
+            <div class="textWithImage">
+                <p>
+                    <i>API (Application Programming Interface)</i> – графический интерфейс программ - предоставляeт
+                    разработчикам аппаратного и программного обеспечения средства создания драйверов и программ,
+                    работающих быстрее на большом числе платформ. Существует несколько видов графических интерфейсов.
+                </p>
+                <img src="../assets/Картинки/api.jpg" class="_img view">
+            </div>
+        </div>
+
+        <div>
+            <h2>
+                Opengl
+            </h2>
+            <div class="textWithImage">
+
+                <img src="../assets/Картинки/opengl.jpg" class="_img view">
+                <p>
+                    <i>OpenGL (Open Graphics Library)</i> – это открытый стандартный API для создания 2D и 3D графики.
+                    Он
+                    широко используется в игровой разработке, визуализации данных, компьютерном моделировании и других
+                    областях. OpenGL предоставляет набор функций для работы с графическими объектами, текстурами,
+                    шейдерами и другими элементами графического процесса. Он поддерживается на различных платформах,
+                    включая Windows, macOS и Linux.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="textWithImage">
+                <div class="invert">
+                    <h2>
+                        DirectX
+                    </h2>
+                    <img src="../assets/Картинки/directX.jpg" class="_img view">
+                </div>
+                <p>
+                    <i>DirectX</i> – это набор API, разработанных Microsoft, для работы с графикой, звуком и
+                    вводом-выводом в
+                    Windows-приложениях. DirectX включает в себя несколько компонентов, включая Direct3D для 3D-графики,
+                    Direct2D для 2D-графики, DirectSound для звука и другие. DirectX обеспечивает высокую
+                    производительность и низкий уровень аппаратной абстракции, что делает его популярным выбором для
+                    игровой разработки на платформе Windows.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h2>
+                WebGL
+            </h2>
+            <div class="textWithImage">
+
+                <img src="../assets/Картинки/webgl.jpg" class="_img view">
+                <p>
+                    <i>WebGL (Web Graphics Library)</i> – это API для создания 3D-графики веб-приложениями. Он основан на
+                    OpenGL ES и позволяет использовать графические возможности браузера для создания интерактивных
+                    3D-сцен и визуализаций. WebGL поддерживается во многих современных браузерах и позволяет создавать
+                    веб-приложения с высококачественной графикой без необходимости установки дополнительных плагинов.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="textWithImage">
+                <div class="invert">
+                    <h2>
+                        Vulkan
+                    </h2>
+                    <img src="../assets/Картинки/Vulkan.jpg" class="_img view">
+                </div>
+                <p>
+                    <i>Vulkan</i> – это открытый стандартный API для работы с графикой, разработанный Khronos Group. Он
+                    предоставляет низкоуровневый доступ к графическому аппаратному обеспечению и позволяет разработчикам
+                    полностью контролировать процесс рендеринга. Vulkan обеспечивает высокую производительность и
+                    масштабируемость, что делает его популярным выбором для игровой разработки и других приложений,
+                    требующих высокой производительности графики.
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div>
+            <h1>Следите за нами </h1>
+            <div>
+                <a href="https://vk.com/">
+                    <img src="../assets/Соцсети/vk.png" alt="vk" width="35px" height="35px">
+                </a>
+
+                <a href="https://ok.ru/">
+                    <img src="../assets/Соцсети/одноклассники.png" alt="одноклассники" width="35px" height="35px">
+                </a>
+
+                <a href="https://www.youtube.com/">
+                    <img src="../assets/Соцсети/youtube.png" alt="youtube" width="35px" height="35px">
+                </a>
+
+                <a href="https://rutube.ru/">
+                    <img src="../assets/Соцсети/rt.png" alt="rt" width="35px" height="35px">
+                </a>
+
+                <a href="https://web.telegram.org/">
+                    <img src="../assets/Соцсети/telegram.png" alt="telegram" width="35px" height="35px">
+                </a>
+
+                <a href="https://dzen.ru/">
+                    <img src="../assets/Соцсети/yd.png" alt="yd" width="35px" height="35px">
+                </a>
+            </div>
+        </div>
+        <div>
+            <p>
+                © 2024. Все права защищены.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="../observer.js"></script>
+</body>
+
+</html>

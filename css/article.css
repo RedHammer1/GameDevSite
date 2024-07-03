@@ -1,0 +1,44 @@
+@media (orientation: landscape) {
+    .article {
+        font-size: calc(2vw);
+    }
+}
+
+@media (orientation: portrait) {
+    .article {
+        font-size: calc(2vw);
+    }
+}
+
+
+
+.articles {
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 35px;
+    animation-fill-mode: forwards;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(19, 41, 102);
+    max-width: 600px;
+
+    border-radius: 25px;
+
+
+}
+
+.article>img {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    border-radius: 50px;
+}
