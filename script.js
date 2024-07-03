@@ -1,10 +1,12 @@
 
 
 
+//Для списка сайт для мобильных устройств - нужно добавить ресайзинг
 function ShowElem(str) {
-    var popup = document.getElementById(str);
+    const div = document.getElementById(str);
 
-    popup.style.display = "block";
+    if (div.value == 1) { div.style.display = 'none'; div.value = 0; }
+    else { div.style.display = 'block'; div.value = 1; }
 }
 function showFlexPopup(str) {
     var popup = document.getElementById(str);

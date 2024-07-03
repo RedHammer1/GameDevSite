@@ -26,31 +26,43 @@ tags.forEach((tag) => {
     observer.observe(tag)
 })
 
-const resizableDiv = document.getElementById('menu');
+
 
 const minWindowSize = 768;
-
 var count = 0;
+
+const resizableDiv = document.getElementById('menu');
 
 function checkWindowSize() {
     if (window.innerWidth > minWindowSize) {
         resizableDiv.style.display = 'none';
+        count = 0;
     }
+
 }
 
 window.onload = checkWindowSize;
-
 const showBtn = document.getElementById('showBtn');
+
 window.addEventListener('resize', () => {
     checkWindowSize();
 });
 
 showBtn.addEventListener('click', () => {
+    
     count++;
-    if (count == 2) { resizableDiv.style.display = 'none'; count = 0; }
-    else { resizableDiv.style.display = 'block'; }
+    if (count == 2) { resizableDiv.style.display = 'none'; count = 0 }
+    else { resizableDiv.style.display = 'block';  }
+    
 
 });
+
+
+
+
+
+
+
 
 
 
